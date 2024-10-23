@@ -3,7 +3,7 @@ const wordList = [
     "sussy", "salty", "drips", "bussy", "simps",
     "stan", "whips", "memez", "tears", "clout",
     "shade", "sigma", "ligma", "ghost", "extra",
-    "cring", "fines", "noobz", "woken", "salty",
+    "yikes", "fines", "noobz", "woken", "salty",
     "yeets", "moody", "bloop", "snaps", "snacc",
     "thicc", "skrrt", "chill", "dazed", "slaps",
     "fines", "glowy", "hyped", "pings", "sksks",
