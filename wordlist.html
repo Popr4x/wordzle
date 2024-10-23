@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordzle Word List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Wordzle Word List</h1>
+    <ul id="word-list"></ul>
+    <button onclick="window.location.href='index.html'">Back to Game</button>
+
+    <script>
+        const wordList = [
+            "vibes", "slayy", "litty", "goats", "fleek",
+            "sussy", "salty", "drips", "bussy", "simps",
+            "stan", "whips", "memez", "tears", "clout",
+            "shade", "sigma", "ligma", "ghost", "extra",
+            "cring", "fines", "noobz", "woken", "salty",
+            "yeets", "moody", "bloop", "snaps", "snacc",
+            "thicc", "skrrt", "chill", "dazed", "slaps",
+            "fines", "glowy", "hyped", "pings", "sksks",
+            "onfle", "roast", "smirk", "swole", "pings",
+            "binge", "drama", "stans", "pouts", "spicy"
+        ];
+
+        const wordListElement = document.getElementById('word-list');
+        wordList.forEach(word => {
+            const li = document.createElement('li');
+            li.textContent = word;
+            wordListElement.appendChild(li);
+        });
+    </script>
+</body>
+</html>

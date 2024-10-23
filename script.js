@@ -1,8 +1,14 @@
 const wordList = [
-    "apple", "berry", "cherry", "grape", "mango",
-    "peach", "plum", "lemon", "orange", "melon",
-    "table", "chair", "glass", "stone", "bread",
-    "water", "music", "plant", "shirt", "sweet"
+    "vibes", "slayy", "litty", "goats", "fleek",
+    "sussy", "salty", "drips", "bussy", "simps",
+    "stan", "whips", "memez", "tears", "clout",
+    "shade", "sigma", "ligma", "ghost", "extra",
+    "cring", "fines", "noobz", "woken", "salty",
+    "yeets", "moody", "bloop", "snaps", "snacc",
+    "thicc", "skrrt", "chill", "dazed", "slaps",
+    "fines", "glowy", "hyped", "pings", "sksks",
+    "onfle", "roast", "smirk", "swole", "pings",
+    "binge", "drama", "stans", "pouts", "spicy"
 ];
 
 let currentWord = '';
