@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Wordle Game</h1>
+    <div id="game" class="grid"></div>
+    <input type="text" id="input" maxlength="5" placeholder="Enter your guess" />
+    <button id="submit">Submit</button>
+    
+    <div id="blur" class="blur" style="display: none;"></div>
+    <div id="winMessageContainer" class="win-message-container" style="display: none;">
+        <p class="win-message">You Win!</p>
+    </div>
+    <div id="loseMessageContainer" class="lose-message-container" style="display: none;">
+        <p class="lose-message">You Lose!</p>
+        <p id="loseWord" class="lose-word"></p> <!-- Placeholder for the lost word -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

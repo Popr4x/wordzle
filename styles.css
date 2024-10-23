@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 5px;
+    margin: 20px auto;
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    white-space: nowrap; /* Prevent line breaks */
+    transition: background-color 0.9s ease, color 0.9s ease; /* Slow down animations */
+}
+
+.cell.correct {
+    background-color: #6aaa64; /* Green */
+    color: white;
+}
+
+.cell.present {
+    background-color: #c9b458; /* Yellow */
+    color: white;
+}
+
+.cell.absent {
+    background-color: #787c7e; /* Gray */
+    color: white;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 18px;
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.win-message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* White background */
+    border-radius: 15px; /* Soft edges */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s ease-in-out; /* Fade in/out effect */
+    z-index: 10; /* Ensure it's on top */
+}
+
+.win-message {
+    font-size: 32px;
+    color: #28a745; /* Green color */
+    margin: 0; /* Reset margin */
+}
+
+.lose-message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* White background */
+    border-radius: 15px; /* Soft edges */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s ease-in-out; /* Fade in/out effect */
+    z-index: 10; /* Ensure it's on top */
+}
+
+.lose-message {
+    font-size: 32px;
+    color: #dc3545; /* Red color */
+    margin: 0; /* Reset margin */
+}
+
+.lose-word {
+    font-size: 24px; /* Font size for the lost word */
+    color: #dc3545; /* Same red color */
+    margin-top: 10px; /* Space above the word */
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    backdrop-filter: blur(5px); /* Blur effect */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s ease-in-out; /* Fade in/out effect */
+    z-index: 9; /* Ensure it's below the win message */
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(5, 40px);
+    }
+
+    .cell {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    input {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
